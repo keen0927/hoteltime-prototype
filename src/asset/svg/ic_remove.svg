@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <polygon id="ic_remove-a" points="2 9.3 18 9.3 18 10.7 2 10.7"/>
+  </defs>
+  <use xlink:href="#ic_remove-a"/>
+</svg>
