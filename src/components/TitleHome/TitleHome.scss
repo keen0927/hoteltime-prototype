@@ -1,7 +1,16 @@
+.title-home {
+    margin-top: 188px;
+    transition: 0.4s;
+    &.hide {
+        margin-top: 92px;
+    }
+}
 h2 {
-    height: 40px;
-    padding: 0 16px;
-    font-size: 16px;
-    line-height: 40px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    
+    padding: 0 20px;
+    font-size: 15px;
     font-weight: bold;
 }

@@ -1,18 +1,28 @@
 import React from 'react';
 import './ProductHome.scss';
 
-const ProdcutHome = () => {
+const ProdcutHome = ({
+    image,
+    productName,
+    productDetail,
+    productDetailPolicy,
+    priceDC,
+    priceDefault,
+    badgeType,
+    packageInfo}) => {
+
     return (
         <div className={`product-home`}>
-            <p className={`image-wrap`}><img src="https://image.goodchoice.kr/event/view/event/643/list/6387.jpg" alt=""/></p>
-            <p className={`product-name`}>제휴점명 상품명</p>
-            <p className={`product-detail`}>상품 상세정보 | <span>정책에 따라 노출</span></p>
+            <p className={`image-wrap`}><img src={image} alt=""/></p>
+            <p className={`product-name`}>{productName}</p>
+            <p className={`product-detail`}>{productDetail} | <span>{productDetailPolicy}</span></p>
             <p className={`product-info`}>
-                <span>50%</span>
-                <span>000,000원</span>
-                <span>BADGE A</span>
+                <span>{priceDC}</span>
+                <span>{priceDefault}</span>
+                <span>{badgeType}</span>
             </p>
-            <p className={`package-info`}><b>PACKAGE</b> 패키지 정보</p>
+            
+            <p className={`package-info`}><b>PACKAGE</b> {packageInfo}</p>
         </div>
     );
 };

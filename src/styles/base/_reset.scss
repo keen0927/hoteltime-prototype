@@ -76,7 +76,17 @@ img {
 body {
     font-family:"Apple SD Gothic Neo","맑은 고딕","Malgun Gothic",sans-serif;
     color: rgba(0,0,0,0.87);
+    padding-bottom: 52px;
 }
 .App {
+    max-width: 768px;
     min-width: 320px;
+}
+#root {
+    max-width: 768px;
+}
+button, a, input, textarea {
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color:transparent;
+	outline:0;
 }

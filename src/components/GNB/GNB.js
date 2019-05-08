@@ -7,14 +7,14 @@ import Res from '../../asset/svg/ic_nav_res.svg';
 import Fav from '../../asset/svg/ic_nav_fav.svg';
 import More from '../../asset/svg/ic_nav_more.svg';
 
-const GNB = () => {
+const GNB = ({handlerOpenMoreMenu}) => {
     return (
         <ul className={`bottom-gnb`}>
             <li><img src={Search} alt="탐색" />탐색</li>
             <li><img src={Discover} alt="발견" />발견</li>
             <li><img src={Res} alt="예약내역" />예약내역</li>
             <li><img src={Fav} alt="찜목록" />찜목록</li>
-            <li><img src={More} alt="더보기" />더보기</li>
+            <li onClick={handlerOpenMoreMenu}><img src={More} alt="더보기" />더보기</li>
         </ul>
     );
 };

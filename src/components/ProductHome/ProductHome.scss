@@ -1,5 +1,5 @@
 .product-home {
-    margin: 0 16px;
+    margin: 0 20px 20px;
     .image-wrap {
         overflow: hidden;
         border-radius: 2px;
@@ -25,6 +25,7 @@
             font-size: 14px;
             line-height: 1;
             &:nth-of-type(1) {
+                font-weight: bold;
                 color: rosybrown;
             }
             &:nth-of-type(2) {
